@@ -1,0 +1,7 @@
+[
+  {"legend_id": 1, "legend_name": "Bodvar", "bio_name": "Bodvar the Bearson", "weapon_one": "Hammer", "weapon_two": "Sword"},
+  {"legend_id": 2, "legend_name": "Cassidy", "bio_name": "Cassidy Miller", "weapon_one": "Hammer", "weapon_two": "Blasters"},
+  {"legend_id": 3, "legend_name": "Orion", "bio_name": "The Mysterious Stranger", "weapon_one": "Rocket Lance", "weapon_two": "Spear"},
+  {"legend_id": 4, "legend_name": "Lord Vraxx", "bio_name": "The Despotic", "weapon_one": "Blasters", "weapon_two": "Rocket Lance"},
+  {"legend_id": 5, "legend_name": "Gnash", "bio_name": "The First Hero", "weapon_one": "Spear", "weapon_two": "Hammer"}
+]
