@@ -10,7 +10,7 @@ def esc(s):
         return ""
     return str(s).replace("\\", "\\\\").replace("'", "\\'").strip()
 
-files = glob("bronze/source=fandom_only/endpoint=legends/date=*/legends_wiki.json")
+files = glob("bronze/**/legends_wiki.json", recursive=True)
 latest = sorted(files)[-1]
 
 with open(latest, encoding="utf-8") as f:
@@ -39,4 +39,4 @@ CREATE TABLE legends_silver (
         )
         legend_id += 1
 
-print(f"✅ Silver SQL généré: {out} ({len(data)} lignes)")
+print(f"✅ Silver SQL généré : {out} ({len(data)} lignes)")

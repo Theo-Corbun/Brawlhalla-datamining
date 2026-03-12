@@ -9,4 +9,4 @@ if __name__ == "__main__":
     run("bronze_ingestion.py")
     run("create_silver_sql.py")
     run("create_gold_sql.py")
-    print("\n✅ Pipeline terminée. Importe silver/ et gold/ dans phpMyAdmin.")
+    print("\n✅ Pipeline terminée.")

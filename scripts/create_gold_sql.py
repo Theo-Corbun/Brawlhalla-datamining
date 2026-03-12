@@ -5,8 +5,7 @@ from glob import glob
 os.makedirs("gold", exist_ok=True)
 out = "gold/legends_gold_kpi.sql"
 
-# prend le dernier bronze legends_wiki.json
-files = glob("bronze/source=official+fandom/endpoint=legends/date=*/legends_wiki.json")
+files = glob("bronze/**/legends_wiki.json", recursive=True)
 latest = sorted(files)[-1]
 
 with open(latest, encoding="utf-8") as f:
@@ -39,5 +38,5 @@ CREATE TABLE legends_gold_kpi (
         f"VALUES ({total_legends}, {unique_weapons});\n"
     )
 
-print(f"✅ Gold SQL généré: {out}")
+print(f"✅ Gold SQL généré : {out}")
 print(f"📊 total_legends={total_legends}, unique_weapons={unique_weapons}")
